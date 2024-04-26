@@ -1,0 +1,19 @@
+{
+  "name": "swaglabs-e2e-automation",
+  "version": "1.0.0",
+  "description": "SwagLabs e2e automation with Playwright for technical interview",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Medsien/swaglabs-e2e-automation.git"
+  },
+  "private": true,
+  "scripts": {
+    "test": "npx playwright test --headed --project chromium",
+    "test:container": "docker build -t swaglabs . && docker run swaglabs"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.42.1",
+    "@types/node": "^20.12.4"
+  }
+}
